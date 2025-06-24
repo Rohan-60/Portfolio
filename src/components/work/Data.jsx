@@ -12,7 +12,7 @@ export const projectsData = [
         title: "Web design",
         category: "web",
     },
-    {
+    {/* {
         id: 2,
         image: work2,
         title: "App movil",
@@ -35,7 +35,7 @@ export const projectsData = [
         image: work5,
         title: "Web design",
         category: "web",
-    },
+    },*/}
 ];
 
 export const projectsNav = [
