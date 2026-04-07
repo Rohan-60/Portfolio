@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c8329837.css",
-    "main.js": "/Portfolio/static/js/main.c7183e77.js",
+    "main.css": "/Portfolio/static/css/main.f3a77af2.css",
+    "main.js": "/Portfolio/static/js/main.f0c8b06a.js",
     "static/js/453.0cac7996.chunk.js": "/Portfolio/static/js/453.0cac7996.chunk.js",
     "static/media/profile1.jpg": "/Portfolio/static/media/profile1.6ad6a13af0df2976c5da.jpg",
+    "static/media/Rohan-Cv-1.pdf": "/Portfolio/static/media/Rohan-Cv-1.8e76d5189bbae87ea239.pdf",
+    "static/media/SkillHive.jpg": "/Portfolio/static/media/SkillHive.dcc23e5469056fb683b3.jpg",
+    "static/media/ez2.jpg": "/Portfolio/static/media/ez2.91fcb0fcefeda3a95403.jpg",
+    "static/media/ez1.jpg": "/Portfolio/static/media/ez1.e422809e16cfcf04d3d2.jpg",
+    "static/media/ez.jpg": "/Portfolio/static/media/ez.1bf43cb45c10d07ba6b7.jpg",
     "static/media/about1.jpg": "/Portfolio/static/media/about1.e6d1b41dd91e72beb0be.jpg",
-    "static/media/Rohan-Cv.pdf": "/Portfolio/static/media/Rohan-Cv.d618ab7a1f9ea5af5922.pdf",
-    "static/media/work2.jpg": "/Portfolio/static/media/work2.e52a0c2981a6c11ba468.jpg",
-    "static/media/work4.jpg": "/Portfolio/static/media/work4.aee985961b648f4df1f2.jpg",
-    "static/media/work5.jpg": "/Portfolio/static/media/work5.094ec4a2224db8908873.jpg",
-    "static/media/work1.jpg": "/Portfolio/static/media/work1.321b4ae3bf404acdfdc6.jpg",
-    "static/media/work3.jpg": "/Portfolio/static/media/work3.135e9065694bc13dc31d.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.c8329837.css.map": "/Portfolio/static/css/main.c8329837.css.map",
-    "main.c7183e77.js.map": "/Portfolio/static/js/main.c7183e77.js.map",
+    "main.f3a77af2.css.map": "/Portfolio/static/css/main.f3a77af2.css.map",
+    "main.f0c8b06a.js.map": "/Portfolio/static/js/main.f0c8b06a.js.map",
     "453.0cac7996.chunk.js.map": "/Portfolio/static/js/453.0cac7996.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8329837.css",
-    "static/js/main.c7183e77.js"
+    "static/css/main.f3a77af2.css",
+    "static/js/main.f0c8b06a.js"
   ]
 }
