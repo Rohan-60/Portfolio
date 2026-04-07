@@ -1,24 +1,38 @@
-import work1 from "../../assets/work1.jpg";
-import work2 from "../../assets/work2.jpg";
-import work3 from "../../assets/work3.jpg";
-import work4 from "../../assets/work4.jpg";
-import work5 from "../../assets/work5.jpg";
+import Skillhive from "../../assets/SkillHive.jpg";
+import ez from "../../assets/ez.jpg";
+import ez1 from "../../assets/ez1.jpg";
+import ez2 from "../../assets/ez2.jpg";
+
 
 
 export const projectsData = [
     {
         id: 1,
-        image: work1,
-        title: "Web design",
+        image: Skillhive,
+        title: "SkillHive Home Services",
         category: "web",
-    },
-    {/* {
-        id: 2,
-        image: work2,
-        title: "App movil",
-        category: "app",
+        description: "A home services platform for booking verified professionals.\
+        There are seprate website for Workers and Admins for easy management of the platform.\
+        The website is built using React for the frontend and Node.js with Express for the backend,\
+        and Firebase and Supabase for the database.   ",
+        demoLink: "https://skillhives.co.in",
+        repoLink: "https://github.com/Rohan-60/loc-serv.git",
     },
     {
+        id: 2,
+        image: ez,
+        gallery: [ez, ez1, ez2],
+        title: "Professional Operations Management System\
+        for Logistics & Storage Excellence",
+        category: "web",
+        description: "A web-based warehouse management system built using React.js and Supabase,\
+        featuring a Kanban-style task board with drag-and-drop functionality. \
+        Designed to handle real-time updates and improve task organization through an interactive\
+        user interface.",
+        repoLink: "https://github.com/Rohan-60/EZSTORAGE2.git",
+
+    },
+    /*{
         id: 3,
         image: work3,
         title: "Brand design",
@@ -35,7 +49,7 @@ export const projectsData = [
         image: work5,
         title: "Web design",
         category: "web",
-    },*/}
+    },*/
 ];
 
 export const projectsNav = [

@@ -31,7 +31,7 @@ const Footer = () => {
                         <i class="uil uil-facebook-f"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/" className="footer_social-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/rohan_kadavil" className="footer_social-link" target="_blank" rel="noopener noreferrer">
                         <i className="uil uil-instagram"></i>
                     </a>
 

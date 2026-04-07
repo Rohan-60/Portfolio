@@ -29,12 +29,16 @@
 .work_card {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 360px;
     padding: 1.25rem;
     border-radius: 1rem;
 }
 
 .work_img {
     width: 295px;
+    height: 207px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
 }
@@ -61,6 +65,103 @@
 
 .work_button:hover .work_button-icon {
     transform: translateX(0.25rem);
+}
+
+.work_modal_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.work_modal {
+    position: relative;
+    width: min(560px, 100%);
+    background: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.work_modal_close {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--title-color);
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.work_modal_img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.work_modal_thumbs {
+    display: flex;
+    gap: 0.55rem;
+    margin-bottom: 0.9rem;
+    overflow-x: auto;
+}
+
+.work_modal_thumb {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.45rem;
+    padding: 0.15rem;
+    background: transparent;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.work_modal_thumb img {
+    width: 64px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    display: block;
+}
+
+.work_modal_thumb.active-thumb {
+    border-color: var(--title-color);
+}
+
+.work_modal_title {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.work_modal_description {
+    color: var(--text-color);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+}
+
+.work_modal_actions {
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+}
+
+.work_modal_button {
+    border: 1px solid var(--title-color);
+    color: var(--title-color);
+    padding: 0.55rem 0.85rem;
+    border-radius: 0.5rem;
+    font-size: var(--small-font-size);
+}
+
+.work_modal_button:hover {
+    background: var(--title-color);
+    color: var(--container-color);
 }
 
 .active-work {
@@ -98,6 +199,10 @@
 @media screen and (max-width: 576px) {
     .work_container {
         grid-template-columns: 1fr;
+    }
+
+    .work_card {
+        width: 100%;
     }
 
     .work_img {
