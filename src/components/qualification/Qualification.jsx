@@ -3,6 +3,7 @@ import './qualification.css';
 import { useState } from 'react';
 
 const Qualification = () => {
+    const showExperience = false;
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -23,12 +24,14 @@ const Qualification = () => {
                         <i className="uil uil-graduation-cap qualification_icon"></i>Education
                     </div>
 
-                    <div
-                        className={toggleState === 2 ? "qualification_button qualification_active button--flex" : "qualification_button button--flex"}
-                        onClick={() => toggleTab(2)}
-                    >
-                        <i className="uil uil-briefcase-alt qualification_icon"></i>Experience
-                    </div>
+                    {showExperience && (
+                        <div
+                            className={toggleState === 2 ? "qualification_button qualification_active button--flex" : "qualification_button button--flex"}
+                            onClick={() => toggleTab(2)}
+                        >
+                            <i className="uil uil-briefcase-alt qualification_icon"></i>Experience
+                        </div>
+                    )}
                 </div>
 
                 <div className="qualification_section">
@@ -65,23 +68,23 @@ const Qualification = () => {
                     </div>
 
                     {/* Experience Content */}
-                    <div className={toggleState === 2 ? "qualification_content qualification_content-active" : "qualification_content"}>
-                        <div className="qualification_data">
-                            <div>
-                                <h3 className="qualification_title">Frontend Developer</h3>
-                                <span className="qualification_subtitle">Company </span>
-                                <div className="qualification_calendar">
-                                    <i className="uil uil-calendar-alt"></i>2027-future
+                    {showExperience && (
+                        <div className={toggleState === 2 ? "qualification_content qualification_content-active" : "qualification_content"}>
+                            <div className="qualification_data">
+                                <div>
+                                    <h3 className="qualification_title">Frontend Developer</h3>
+                                    <span className="qualification_subtitle">Company</span>
+                                    <div className="qualification_calendar">
+                                        <i className="uil uil-calendar-alt"></i> 2027 - Future
+                                    </div>
+                                </div>
+                                <div>
+                                    <span className="qualification_rounder"></span>
+                                    <span className="qualification_line"></span>
                                 </div>
                             </div>
-                            <div>
-                                <span className="qualification_rounder"></span>
-                                <span className="qualification_line"></span>
-                            </div>
                         </div>
-
-
-                    </div>
+                    )}
                 </div>
             </div>
         </section>
