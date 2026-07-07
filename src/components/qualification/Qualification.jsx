@@ -3,7 +3,7 @@ import './qualification.css';
 import { useState } from 'react';
 
 const Qualification = () => {
-    const showExperience = false;
+    const showExperience = true;
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -72,10 +72,10 @@ const Qualification = () => {
                         <div className={toggleState === 2 ? "qualification_content qualification_content-active" : "qualification_content"}>
                             <div className="qualification_data">
                                 <div>
-                                    <h3 className="qualification_title">Frontend Developer</h3>
-                                    <span className="qualification_subtitle">Company</span>
+                                    <h3 className="qualification_title">Frontend Developer Intern</h3>
+                                    <span className="qualification_subtitle">Simelabs - An Astek Company</span>
                                     <div className="qualification_calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2027 - Future
+                                        <i className="uil uil-calendar-alt"></i> 2026 - 2026
                                     </div>
                                 </div>
                                 <div>
